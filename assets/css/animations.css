@@ -1,0 +1,32 @@
+.fadeIn{
+    animation:fadeIn .6s ease forwards;
+    }
+    
+    @keyframes fadeIn{
+    0%{opacity:0;transform:translateY(20px);}
+    100%{opacity:1;transform:translateY(0);}
+    }
+    
+    .correct{
+    background:#16a34a;
+    animation:correctFlash .5s;
+    }
+    
+    @keyframes correctFlash{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+    100%{transform:scale(1);}
+    }
+    
+    .wrong{
+    background:#dc2626;
+    animation:shake .3s;
+    }
+    
+    @keyframes shake{
+    0%{transform:translateX(0);}
+    25%{transform:translateX(-5px);}
+    50%{transform:translateX(5px);}
+    75%{transform:translateX(-5px);}
+    100%{transform:translateX(0);}
+    }

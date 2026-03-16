@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laravel Interview Practice</title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+    <div class="login-wrapper">
+        <div class="login-container">
+            <h1>Interview Practice</h1>
+            <p>Practice Interview Questions</p>
+
+            <div id="g_id_onload"
+                data-client_id="785483658298-77cl9ol3von72pr7kbojphfdve2kfpb7.apps.googleusercontent.com"
+                data-callback="handleCredentialResponse">
+            </div>
+
+            <div class="google-login">
+                <div class="g_id_signin"
+                    data-type="standard"
+                    data-shape="pill"
+                    data-theme="outline"
+                    data-text="signin_with"
+                    data-size="large"
+                    data-logo_alignment="left">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>

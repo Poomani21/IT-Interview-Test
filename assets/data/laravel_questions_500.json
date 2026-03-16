@@ -1,0 +1,602 @@
+[
+    {
+        "id": 1,
+        "level": "basic",
+        "question": "What is Laravel?",
+        "options": [
+            "PHP Framework",
+            "JavaScript Library",
+            "Database",
+            "Server"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 2,
+        "level": "basic",
+        "question": "Which architecture Laravel follows?",
+        "options": [
+            "MVC",
+            "MVP",
+            "MVVM",
+            "Layered"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 3,
+        "level": "basic",
+        "question": "Which command creates a Laravel project?",
+        "options": [
+            "composer create-project",
+            "php artisan new",
+            "php laravel create",
+            "composer laravel new"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 4,
+        "level": "basic",
+        "question": "Which file stores environment configuration?",
+        "options": [
+            ".env",
+            ".config",
+            "settings.php",
+            "env.php"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 5,
+        "level": "basic",
+        "question": "Which template engine Laravel uses?",
+        "options": [
+            "Twig",
+            "Blade",
+            "Smarty",
+            "Volt"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 6,
+        "level": "basic",
+        "question": "Which command starts Laravel server?",
+        "options": [
+            "php artisan serve",
+            "php start",
+            "composer run",
+            "laravel run"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 7,
+        "level": "basic",
+        "question": "Where are routes defined?",
+        "options": [
+            "routes/web.php",
+            "routes/app.php",
+            "routes/main.php",
+            "routes/http.php"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 8,
+        "level": "basic",
+        "question": "Which ORM Laravel uses?",
+        "options": [
+            "Doctrine",
+            "Eloquent",
+            "Hibernate",
+            "ActiveRecord"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 9,
+        "level": "basic",
+        "question": "Which artisan command creates controller?",
+        "options": [
+            "php artisan make:controller",
+            "php artisan controller",
+            "php make controller",
+            "artisan controller create"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 10,
+        "level": "basic",
+        "question": "What does migration handle?",
+        "options": [
+            "Database structure",
+            "Frontend layout",
+            "API calls",
+            "User authentication"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 11,
+        "level": "basic",
+        "question": "Which folder stores controllers?",
+        "options": [
+            "app/Http/Controllers",
+            "resources/controllers",
+            "routes/controllers",
+            "storage/controllers"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 12,
+        "level": "basic",
+        "question": "Which helper generates URLs?",
+        "options": [
+            "url()",
+            "path()",
+            "routeurl()",
+            "link()"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 13,
+        "level": "basic",
+        "question": "Which command creates migration?",
+        "options": [
+            "php artisan make:migration",
+            "php artisan create:migration",
+            "php make migration",
+            "artisan new migration"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 14,
+        "level": "basic",
+        "question": "Where are Blade views stored?",
+        "options": [
+            "resources/views",
+            "app/views",
+            "views",
+            "templates"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 15,
+        "level": "basic",
+        "question": "Which command runs migrations?",
+        "options": [
+            "php artisan migrate",
+            "php artisan db",
+            "php migrate",
+            "artisan run migrate"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 16,
+        "level": "medium",
+        "question": "What is middleware in Laravel?",
+        "options": [
+            "HTTP request filter",
+            "Database tool",
+            "Routing system",
+            "View engine"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 17,
+        "level": "medium",
+        "question": "Which command creates middleware?",
+        "options": [
+            "php artisan make:middleware",
+            "php artisan new middleware",
+            "artisan middleware",
+            "php middleware"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 18,
+        "level": "medium",
+        "question": "What is CSRF protection?",
+        "options": [
+            "Security token validation",
+            "Cache method",
+            "Session encryption",
+            "Database security"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 19,
+        "level": "medium",
+        "question": "Which method retrieves all records?",
+        "options": [
+            "all()",
+            "getAll()",
+            "fetch()",
+            "records()"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 20,
+        "level": "medium",
+        "question": "Which relationship defines one-to-many?",
+        "options": [
+            "hasMany",
+            "belongsTo",
+            "hasOne",
+            "manyToMany"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 21,
+        "level": "medium",
+        "question": "Which relationship defines inverse relation?",
+        "options": [
+            "belongsTo",
+            "hasMany",
+            "hasOne",
+            "manyToMany"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 22,
+        "level": "medium",
+        "question": "Which function retrieves first record?",
+        "options": [
+            "first()",
+            "one()",
+            "top()",
+            "fetchOne()"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 23,
+        "level": "medium",
+        "question": "Which artisan command creates model?",
+        "options": [
+            "php artisan make:model",
+            "php artisan create:model",
+            "php model make",
+            "artisan model"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 24,
+        "level": "medium",
+        "question": "Which file registers service providers?",
+        "options": [
+            "config/app.php",
+            "config/services.php",
+            "app/providers.php",
+            "bootstrap/providers.php"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 25,
+        "level": "medium",
+        "question": "Which command clears cache?",
+        "options": [
+            "php artisan cache:clear",
+            "php artisan clear",
+            "php clear cache",
+            "artisan clean"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 26,
+        "level": "hard",
+        "question": "What is Laravel Service Container?",
+        "options": [
+            "A dependency injection container",
+            "A database migration tool",
+            "A routing system",
+            "A Blade component"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 27,
+        "level": "hard",
+        "question": "What is the purpose of a Service Provider in Laravel?",
+        "options": [
+            "To register services in the container",
+            "To create database tables",
+            "To define routes",
+            "To render Blade views"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 28,
+        "level": "hard",
+        "question": "Which method is commonly used inside a Service Provider to bind services?",
+        "options": [
+            "register()",
+            "boot()",
+            "bindService()",
+            "make()"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 29,
+        "level": "hard",
+        "question": "Which method in a Service Provider is used after all services are registered?",
+        "options": [
+            "boot()",
+            "run()",
+            "handle()",
+            "init()"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 30,
+        "level": "hard",
+        "question": "What does dependency injection help with in Laravel?",
+        "options": [
+            "Automatically resolving class dependencies",
+            "Improving CSS rendering",
+            "Creating Blade layouts",
+            "Running migrations"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 31,
+        "level": "hard",
+        "question": "Which Laravel feature allows method and class dependencies to be injected automatically?",
+        "options": [
+            "Service Container",
+            "Middleware",
+            "Scheduler",
+            "Blade"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 32,
+        "level": "hard",
+        "question": "What is a singleton binding in Laravel?",
+        "options": [
+            "A binding that returns the same instance every time",
+            "A binding used only for routes",
+            "A migration that runs once",
+            "A model with one record"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 33,
+        "level": "hard",
+        "question": "Which method binds a class as a singleton in Laravel?",
+        "options": [
+            "singleton()",
+            "bindOnce()",
+            "instanceOf()",
+            "share()"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 34,
+        "level": "hard",
+        "question": "What is the purpose of Laravel Facades?",
+        "options": [
+            "Provide static-like access to services in the container",
+            "Create database indexes",
+            "Replace controllers",
+            "Generate migrations"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 35,
+        "level": "hard",
+        "question": "Which of the following is an advantage of queues in Laravel?",
+        "options": [
+            "Deferring time-consuming tasks",
+            "Rendering views faster by default",
+            "Replacing middleware",
+            "Avoiding models"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 36,
+        "level": "hard",
+        "question": "Which artisan command creates a job in Laravel?",
+        "options": [
+            "php artisan make:job",
+            "php artisan create:job",
+            "php artisan new:job",
+            "php artisan job:make"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 37,
+        "level": "hard",
+        "question": "Which table is commonly used to store queued jobs when using the database driver?",
+        "options": [
+            "jobs",
+            "queue_jobs",
+            "failed_jobs_only",
+            "tasks"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 38,
+        "level": "hard",
+        "question": "What is the purpose of the failed_jobs table in Laravel?",
+        "options": [
+            "To store jobs that could not be processed successfully",
+            "To store deleted users",
+            "To track failed logins",
+            "To save validation errors"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 39,
+        "level": "hard",
+        "question": "Which artisan command is used to process queued jobs?",
+        "options": [
+            "php artisan queue:work",
+            "php artisan queue:run",
+            "php artisan work:queue",
+            "php artisan jobs:work"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 40,
+        "level": "hard",
+        "question": "What is event broadcasting in Laravel mainly used for?",
+        "options": [
+            "Sending server-side events to the client in real time",
+            "Creating database migrations",
+            "Optimizing Blade templates",
+            "Running unit tests"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 41,
+        "level": "hard",
+        "question": "Which interface should an event implement to be broadcasted?",
+        "options": [
+            "ShouldBroadcast",
+            "CanBroadcast",
+            "Broadcastable",
+            "EventBroadcast"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 42,
+        "level": "hard",
+        "question": "What is Laravel Horizon used for?",
+        "options": [
+            "Managing and monitoring Redis queues",
+            "Rendering email templates",
+            "Building APIs",
+            "Handling CSRF protection"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 43,
+        "level": "hard",
+        "question": "Which cache driver is often used for high-performance Laravel applications?",
+        "options": [
+            "Redis",
+            "Array",
+            "File only",
+            "Session"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 44,
+        "level": "hard",
+        "question": "What is Laravel Octane designed to improve?",
+        "options": [
+            "Application performance",
+            "Blade syntax",
+            "Migration rollback",
+            "Form validation"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 45,
+        "level": "hard",
+        "question": "Which package is commonly used for full-text search in Laravel ecosystems?",
+        "options": [
+            "Laravel Scout",
+            "Laravel Blade",
+            "Laravel Pint",
+            "Laravel Sail"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 46,
+        "level": "hard",
+        "question": "What is the main purpose of Laravel Scout?",
+        "options": [
+            "Adding full-text search to Eloquent models",
+            "Managing queues",
+            "Creating middleware",
+            "Testing APIs"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 47,
+        "level": "hard",
+        "question": "What does eager loading solve in Laravel?",
+        "options": [
+            "The N+1 query problem",
+            "Route model binding",
+            "Session expiration",
+            "Blade inheritance"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 48,
+        "level": "hard",
+        "question": "Which method is used for eager loading relationships?",
+        "options": [
+            "with()",
+            "loadNow()",
+            "joinWith()",
+            "attach()"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 49,
+        "level": "hard",
+        "question": "What is lazy eager loading in Laravel?",
+        "options": [
+            "Loading relationships after the model is retrieved",
+            "Loading only one column",
+            "Skipping model relationships",
+            "Caching all database queries"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 50,
+        "level": "hard",
+        "question": "Which method can be used for lazy eager loading?",
+        "options": [
+            "load()",
+            "attach()",
+            "save()",
+            "merge()"
+        ],
+        "answer": 0
+    }
+]

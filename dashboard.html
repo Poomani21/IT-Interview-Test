@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 16px;
+      background: #1e293b;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .header h2 {
+      margin: 0;
+      color: #f8fafc;
+      font-size: 28px;
+    }
+
+    #userName {
+      font-size: 16px;
+      color: #cbd5e1;
+      font-weight: bold;
+    }
+
+    #testTypeSection h3 {
+      color: #e2e8f0;
+      margin-bottom: 20px;
+    }
+
+    .test-types {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 24px;
+      margin-top: 20px;
+      align-items: stretch;
+    }
+
+    .test-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      background: #1e293b;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      border: 1px solid #334155;
+    }
+
+    .card {
+      width: 100%;
+      min-height: 140px;
+      padding: 24px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      cursor: pointer;
+      transition: 0.3s;
+      color: #fff;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 16px;
+      color: #e0e7ff;
+    }
+
+    .progress-card {
+      width: 100%;
+      background: #0f172a;
+      border-radius: 16px;
+      padding: 20px;
+      border: 1px solid #334155;
+    }
+
+    .progress-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #f8fafc;
+      margin-bottom: 16px;
+    }
+
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: #cbd5e1;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 16px;
+      background: #334155;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #22c55e, #3b82f6);
+      border-radius: 10px;
+      transition: width 0.4s ease;
+      width: 0%;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .stat-card {
+      border-radius: 14px;
+      padding: 16px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .stat-card.correct {
+      background: #052e16;
+      color: #4ade80;
+      border: 1px solid #166534;
+    }
+
+    .stat-card.wrong {
+      background: #450a0a;
+      color: #f87171;
+      border: 1px solid #991b1b;
+    }
+
+    .stat-card.total {
+      background: #082f49;
+      color: #38bdf8;
+      border: 1px solid #0ea5e9;
+    }
+
+    .stat-card.attended {
+      background: #2e1065;
+      color: #c084fc;
+      border: 1px solid #7c3aed;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 14px;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+      }
+
+      .header h2 {
+        font-size: 24px;
+      }
+
+      .test-types {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .test-wrapper {
+        padding: 16px;
+      }
+
+      .card {
+        padding: 20px;
+        min-height: auto;
+      }
+
+      .card h3 {
+        font-size: 20px;
+      }
+
+      .card p {
+        font-size: 15px;
+      }
+
+      .progress-card {
+        padding: 16px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+
+      .header {
+        padding: 14px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+      }
+
+      .header h2 {
+        font-size: 20px;
+      }
+
+      #testTypeSection h3 {
+        font-size: 18px;
+        margin-bottom: 14px;
+      }
+
+      .test-wrapper {
+        padding: 12px;
+        gap: 14px;
+        border-radius: 14px;
+      }
+
+      .card {
+        padding: 16px;
+        border-radius: 12px;
+      }
+
+      .card h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+
+      .card p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .progress-card {
+        padding: 14px;
+        border-radius: 12px;
+      }
+
+      .progress-title {
+        font-size: 17px;
+      }
+
+      .progress-label {
+        font-size: 13px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .progress-bar {
+        height: 14px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-card {
+        padding: 14px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Practice Test Dashboard</h2>
+    <div id="userName"></div>
+  </div>
+
+  <div id="testTypeSection">
+    <h3>Select Test Type</h3>
+    <div class="test-types">
+
+      <div class="test-wrapper">
+        <div class="card test-card" data-test="laravel">
+          <h3>Laravel Test</h3>
+          <p>Laravel Developer Questions</p>
+        </div>
+
+        <div class="progress-card">
+          <div class="progress-title">Laravel Progress</div>
+          <div class="progress-label">
+            <span>Completed</span>
+            <span id="laravelProgressText">0 / 0</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="laravelProgressBar"></div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card total">
+              Total Questions<br>
+              <span id="laravelTotal">0</span>
+            </div>
+            <div class="stat-card attended">
+              Attended<br>
+              <span id="laravelAttended">0</span>
+            </div>
+            <div class="stat-card correct">
+              Correct<br>
+              <span id="laravelCorrect">0</span>
+            </div>
+            <div class="stat-card wrong">
+              Wrong<br>
+              <span id="laravelWrong">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-wrapper">
+        <div class="card test-card" data-test="ios">
+          <h3>Mobile Test</h3>
+          <p>Mobile Developer Questions</p>
+        </div>
+
+        <div class="progress-card">
+          <div class="progress-title">Mobile Progress</div>
+          <div class="progress-label">
+            <span>Completed</span>
+            <span id="iosProgressText">0 / 0</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="iosProgressBar"></div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card total">
+              Total Questions<br>
+              <span id="iosTotal">0</span>
+            </div>
+            <div class="stat-card attended">
+              Attended<br>
+              <span id="iosAttended">0</span>
+            </div>
+            <div class="stat-card correct">
+              Correct<br>
+              <span id="iosCorrect">0</span>
+            </div>
+            <div class="stat-card wrong">
+              Wrong<br>
+              <span id="iosWrong">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      const user = JSON.parse(localStorage.getItem("user"));
+
+      if (user && user.name) {
+        $("#userName").text(user.name);
+      } else {
+        $("#userName").text("Guest User");
+      }
+
+      function getNumber(key) {
+        return parseInt(localStorage.getItem(key)) || 0;
+      }
+
+      function getModuleStats(moduleName) {
+        const basicCorrect = getNumber(moduleName + "_correct_basic");
+        const basicWrong = getNumber(moduleName + "_wrong_basic");
+
+        const mediumCorrect = getNumber(moduleName + "_correct_medium");
+        const mediumWrong = getNumber(moduleName + "_wrong_medium");
+
+        const hardCorrect = getNumber(moduleName + "_correct_hard");
+        const hardWrong = getNumber(moduleName + "_wrong_hard");
+
+        const correct = basicCorrect + mediumCorrect + hardCorrect;
+        const wrong = basicWrong + mediumWrong + hardWrong;
+        const attended = correct + wrong;
+
+        return {
+          correct: correct,
+          wrong: wrong,
+          attended: attended
+        };
+      }
+
+      function updateProgress(prefix, data) {
+        const total = data.total || 0;
+        const attended = data.attended || 0;
+        const correct = data.correct || 0;
+        const wrong = data.wrong || 0;
+        const percentage = total > 0 ? (attended / total) * 100 : 0;
+
+        $("#" + prefix + "Total").text(total);
+        $("#" + prefix + "Attended").text(attended);
+        $("#" + prefix + "Correct").text(correct);
+        $("#" + prefix + "Wrong").text(wrong);
+        $("#" + prefix + "ProgressText").text(attended + " / " + total);
+        $("#" + prefix + "ProgressBar").css("width", percentage + "%");
+      }
+
+      function loadQuestionCount(filePath, prefix, moduleName) {
+        $.getJSON(filePath, function (questions) {
+          const totalQuestions = Array.isArray(questions) ? questions.length : 0;
+          const stats = getModuleStats(moduleName);
+
+          updateProgress(prefix, {
+            total: totalQuestions,
+            attended: stats.attended,
+            correct: stats.correct,
+            wrong: stats.wrong
+          });
+        }).fail(function () {
+          console.error("Failed to load " + filePath);
+
+          const stats = getModuleStats(moduleName);
+
+          updateProgress(prefix, {
+            total: 0,
+            attended: stats.attended,
+            correct: stats.correct,
+            wrong: stats.wrong
+          });
+        });
+      }
+
+      loadQuestionCount("assets/data/laravel_questions_500.json", "laravel", "laravel");
+      loadQuestionCount("assets/data/ios_questions.json", "ios", "mobile");
+
+      $(".test-card").on("click", function () {
+        const testType = $(this).data("test");
+
+        if (testType === "laravel") {
+          window.location.href = "laravel.html";
+        } else if (testType === "ios") {
+          window.location.href = "mobile.html";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

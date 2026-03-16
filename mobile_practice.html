@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practice</title>
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/practice.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <button id="backToDashboard" class="icon-btn" title="Back">
+      <svg class="icon" viewBox="0 0 24 24" fill="none">
+        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <h2 id="headerName">Mobile Practice Test</h2>
+  </div>
+
+  <div class="controls">
+    <button id="bookmarkBtn" class="icon-btn" title="Bookmark">
+      <svg class="icon" viewBox="0 0 24 24" fill="none">
+        <path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <button id="darkMode" class="icon-btn" title="Dark Mode">
+      <svg class="icon" viewBox="0 0 24 24" fill="none">
+        <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <button id="resetTest" class="reset-btn">Reset Test</button>
+
+    <div class="score-box">Score : <span id="score">0</span></div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="questionContainer"></div>
+
+  <div class="navButtons">
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+  </div>
+
+  <div id="navigation"></div>
+</div>
+
+<script src="assets/js/mobile.js"></script>
+</body>
+</html>

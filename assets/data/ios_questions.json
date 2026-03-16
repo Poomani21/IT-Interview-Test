@@ -1,0 +1,722 @@
+[
+    {
+      "id": 1,
+      "level": "basic",
+      "question": "What language is primarily used for modern iOS development?",
+      "options": [
+        "Swift",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 2,
+      "level": "basic",
+      "question": "Which company develops iOS?",
+      "options": [
+        "Apple",
+        "Google",
+        "Microsoft",
+        "Meta"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 3,
+      "level": "basic",
+      "question": "Which IDE is commonly used for iOS development?",
+      "options": [
+        "Xcode",
+        "Android Studio",
+        "Visual Studio",
+        "Eclipse"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 4,
+      "level": "basic",
+      "question": "Which framework is used to build iOS user interfaces declaratively?",
+      "options": [
+        "SwiftUI",
+        "UIKit",
+        "CoreData",
+        "Combine"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 5,
+      "level": "basic",
+      "question": "Which framework was traditionally used for iOS UI development before SwiftUI?",
+      "options": [
+        "UIKit",
+        "SpriteKit",
+        "CloudKit",
+        "ARKit"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 6,
+      "level": "basic",
+      "question": "What file is commonly used as the entry point of a Swift iOS app?",
+      "options": [
+        "App.swift",
+        "index.php",
+        "main.py",
+        "app.js"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 7,
+      "level": "basic",
+      "question": "Which keyword is used to declare a constant in Swift?",
+      "options": [
+        "let",
+        "var",
+        "const",
+        "final"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 8,
+      "level": "basic",
+      "question": "Which keyword is used to declare a variable in Swift?",
+      "options": [
+        "var",
+        "let",
+        "value",
+        "set"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 9,
+      "level": "basic",
+      "question": "What does MVC stand for in iOS architecture?",
+      "options": [
+        "Model View Controller",
+        "Module View Component",
+        "Model Visual Code",
+        "Main View Controller"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 10,
+      "level": "basic",
+      "question": "Which UI component is used to display a scrollable list in UIKit?",
+      "options": [
+        "UITableView",
+        "UILabel",
+        "UIButton",
+        "UIImageView"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 11,
+      "level": "basic",
+      "question": "Which UI component is used to show text on screen?",
+      "options": [
+        "UILabel",
+        "UIButton",
+        "UITextField",
+        "UIImageView"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 12,
+      "level": "basic",
+      "question": "Which control is used to accept user text input?",
+      "options": [
+        "UITextField",
+        "UILabel",
+        "UIImageView",
+        "UIStackView"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 13,
+      "level": "basic",
+      "question": "Which tool helps design UI visually in Xcode?",
+      "options": [
+        "Interface Builder",
+        "Activity Monitor",
+        "Finder",
+        "Terminal"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 14,
+      "level": "basic",
+      "question": "What is used to manage app navigation in UIKit?",
+      "options": [
+        "UINavigationController",
+        "UITableView",
+        "UIWindowScene",
+        "UILabel"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 15,
+      "level": "basic",
+      "question": "Which class represents a screen in UIKit?",
+      "options": [
+        "UIViewController",
+        "UIView",
+        "UIApplication",
+        "UIScene"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 16,
+      "level": "basic",
+      "question": "What is the default collection type for ordered values in Swift?",
+      "options": [
+        "Array",
+        "Set",
+        "Dictionary",
+        "Tuple"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 17,
+      "level": "basic",
+      "question": "Which collection type stores unique values in Swift?",
+      "options": [
+        "Set",
+        "Array",
+        "Dictionary",
+        "String"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 18,
+      "level": "basic",
+      "question": "Which collection type stores key-value pairs in Swift?",
+      "options": [
+        "Dictionary",
+        "Array",
+        "Set",
+        "Optional"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 19,
+      "level": "basic",
+      "question": "Which symbol is used for optionals in Swift type declarations?",
+      "options": [
+        "?",
+        "!",
+        "#",
+        "@"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 20,
+      "level": "basic",
+      "question": "What does optional binding help avoid in Swift?",
+      "options": [
+        "Nil-related crashes",
+        "Slow animations",
+        "Memory leaks",
+        "Network calls"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Which keyword is used to safely unwrap an optional in Swift?",
+      "options": [
+        "if let",
+        "guard break",
+        "unwrap",
+        "safe let"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Which statement is commonly used for early exit when optional binding fails?",
+      "options": [
+        "guard let",
+        "if case",
+        "switch let",
+        "do let"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "What is the purpose of Auto Layout in iOS?",
+      "options": [
+        "To create responsive UI constraints",
+        "To store local database records",
+        "To handle HTTP requests",
+        "To manage app signing"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Which UIKit view is commonly used for grid-style layouts?",
+      "options": [
+        "UICollectionView",
+        "UITableView",
+        "UILabel",
+        "UIAlertController"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "What is delegation in iOS development?",
+      "options": [
+        "A design pattern for communication between objects",
+        "A way to encrypt local files",
+        "A method to compile Swift code",
+        "A replacement for Auto Layout"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Which protocol is often implemented for UITableView data handling?",
+      "options": [
+        "UITableViewDataSource",
+        "Codable",
+        "Hashable",
+        "Identifiable"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Which protocol handles row selection and display behavior in UITableView?",
+      "options": [
+        "UITableViewDelegate",
+        "NSCopying",
+        "ObservableObject",
+        "Sequence"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "What is the purpose of Codable in Swift?",
+      "options": [
+        "To encode and decode data",
+        "To draw UI views",
+        "To handle push notifications",
+        "To animate layers"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Which class is commonly used to make HTTP network requests in iOS?",
+      "options": [
+        "URLSession",
+        "UserDefaults",
+        "FileManager",
+        "NotificationCenter"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Where is small app preference data commonly stored in iOS?",
+      "options": [
+        "UserDefaults",
+        "Keychain only",
+        "CoreAnimation",
+        "URLCache only"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Which iOS feature is best suited for storing sensitive items like tokens or passwords?",
+      "options": [
+        "Keychain",
+        "UserDefaults",
+        "plist only",
+        "UILabel"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "What does @State do in SwiftUI?",
+      "options": [
+        "Stores local mutable view state",
+        "Creates a navigation controller",
+        "Performs background downloads",
+        "Manages app permissions"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "What does @Binding do in SwiftUI?",
+      "options": [
+        "Creates a two-way connection to state owned elsewhere",
+        "Stores app secrets securely",
+        "Downloads JSON data",
+        "Creates a new database table"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "What is the purpose of ObservableObject in SwiftUI?",
+      "options": [
+        "To notify views when data changes",
+        "To compile Objective-C code",
+        "To define Auto Layout constraints",
+        "To create sound effects"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Which property wrapper is commonly used to observe an ObservableObject inside a SwiftUI view?",
+      "options": [
+        "@StateObject",
+        "@IBAction",
+        "@IBOutlet",
+        "@UIApplicationMain"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 36,
+      "level": "medium",
+      "question": "Which component is used to present alerts in UIKit?",
+      "options": [
+        "UIAlertController",
+        "UIStackView",
+        "CALayer",
+        "URLRequest"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 37,
+      "level": "medium",
+      "question": "What is the purpose of DispatchQueue.main.async?",
+      "options": [
+        "To run UI updates on the main thread",
+        "To delete background tasks",
+        "To store data in Core Data",
+        "To open Safari"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 38,
+      "level": "medium",
+      "question": "Which framework is commonly used for local database persistence in Apple apps?",
+      "options": [
+        "Core Data",
+        "Core Graphics",
+        "AVFoundation",
+        "MapKit"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 39,
+      "level": "medium",
+      "question": "What is a closure in Swift?",
+      "options": [
+        "A self-contained block of functionality",
+        "A database migration",
+        "A storyboard segue",
+        "A view lifecycle method"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 40,
+      "level": "medium",
+      "question": "Which keyword is used to define a protocol in Swift?",
+      "options": [
+        "protocol",
+        "interface",
+        "delegate",
+        "contract"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "What is the difference between a struct and a class in Swift?",
+      "options": [
+        "Structs are value types and classes are reference types",
+        "Classes are value types and structs are reference types",
+        "Both are reference types",
+        "Both are value types"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "What is retain cycle in iOS development?",
+      "options": [
+        "A memory leak caused by strong references keeping objects alive",
+        "A repeated animation loop",
+        "A recursive Auto Layout issue",
+        "A network retry strategy"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Which keyword is commonly used in closure capture lists to avoid retain cycles?",
+      "options": [
+        "weak",
+        "strong",
+        "safe",
+        "copy"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "What does ARC stand for in Swift/iOS?",
+      "options": [
+        "Automatic Reference Counting",
+        "Automatic Resource Control",
+        "App Runtime Cache",
+        "Advanced Retain Compiler"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "What is the purpose of the [weak self] capture list in closures?",
+      "options": [
+        "To prevent strong reference cycles",
+        "To speed up JSON decoding",
+        "To force unwrap self",
+        "To update UI automatically"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "What is protocol-oriented programming in Swift?",
+      "options": [
+        "A style of design focused on protocols and protocol extensions",
+        "A way to draw UI without storyboards",
+        "A replacement for ARC",
+        "A database modeling technique"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Which keyword prevents a class from being subclassed in Swift?",
+      "options": [
+        "final",
+        "static",
+        "private",
+        "sealed"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "What is the main advantage of using generics in Swift?",
+      "options": [
+        "Writing reusable and type-safe code",
+        "Avoiding the need for classes",
+        "Disabling optionals",
+        "Replacing protocols entirely"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "What does async/await help manage in Swift?",
+      "options": [
+        "Asynchronous code in a readable way",
+        "Storyboard transitions",
+        "Core Data migrations",
+        "Static library linking"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "What is the purpose of Task in Swift concurrency?",
+      "options": [
+        "To create and manage asynchronous work",
+        "To render SwiftUI previews",
+        "To define protocol methods",
+        "To allocate memory manually"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 51,
+      "level": "hard",
+      "question": "What is the actor type used for in Swift concurrency?",
+      "options": [
+        "Protecting mutable state from data races",
+        "Rendering 3D graphics",
+        "Building table views",
+        "Defining app icons"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 52,
+      "level": "hard",
+      "question": "Which keyword marks a function as asynchronous in Swift?",
+      "options": [
+        "async",
+        "await",
+        "throws",
+        "defer"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 53,
+      "level": "hard",
+      "question": "Which keyword is used when calling an async function?",
+      "options": [
+        "await",
+        "async",
+        "try",
+        "defer"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 54,
+      "level": "hard",
+      "question": "What is diffable data source in UIKit mainly used for?",
+      "options": [
+        "Managing table and collection view updates more safely",
+        "Encrypting app data",
+        "Running unit tests",
+        "Building network layers"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 55,
+      "level": "hard",
+      "question": "What is the role of SceneDelegate in multi-scene UIKit apps?",
+      "options": [
+        "Managing lifecycle events for a scene",
+        "Handling only push notifications",
+        "Replacing UINavigationController",
+        "Storing Core Data entities"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 56,
+      "level": "hard",
+      "question": "What is method swizzling in iOS?",
+      "options": [
+        "Changing method implementations at runtime",
+        "Creating SwiftUI modifiers",
+        "Compiling Objective-C to Swift",
+        "Converting JSON to models"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 57,
+      "level": "hard",
+      "question": "What is the purpose of Instruments in Xcode?",
+      "options": [
+        "Profiling performance and memory usage",
+        "Designing app icons",
+        "Writing unit tests only",
+        "Managing App Store reviews"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 58,
+      "level": "hard",
+      "question": "Which testing framework is commonly used for unit tests in iOS?",
+      "options": [
+        "XCTest",
+        "QuickLook",
+        "CoreTest",
+        "SwiftInspect"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 59,
+      "level": "hard",
+      "question": "What is dependency injection in iOS architecture?",
+      "options": [
+        "Providing dependencies from outside instead of creating them internally",
+        "Installing CocoaPods automatically",
+        "Embedding frameworks into app bundles",
+        "Linking storyboards together"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 60,
+      "level": "hard",
+      "question": "What is one key benefit of using MVVM in iOS apps?",
+      "options": [
+        "Better separation of UI and business logic",
+        "Automatic memory management removal",
+        "No need for networking code",
+        "Eliminating all delegates"
+      ],
+      "answer": 0
+    }
+  ]
